@@ -436,11 +436,11 @@ function getEdgeContent() {
             <div style="padding:8px;background:rgba(0,0,0,0.02);border-bottom:1px solid rgba(0,0,0,0.08);display:flex;gap:8px;">
                 <button style="padding:8px 16px;border:1px solid rgba(0,0,0,0.2);background:white;border-radius:4px;cursor:pointer;font-size:13px;">←</button>
                 <button style="padding:8px 16px;border:1px solid rgba(0,0,0,0.2);background:white;border-radius:4px;cursor:pointer;font-size:13px;">→</button>
-                <button style="padding:8px 16px;border:1px solid rgba(0,0,0,0.2);background:white;border-radius:4px;cursor:pointer;font-size:13px;">⟳</button>
-                <input id="url-input" value="https://www.bing.com" style="flex:1;padding:8px 16px;border:1px solid rgba(0,0,0,0.2);border-radius:20px;outline:none;font-size:13px;">
+                <button onclick="document.getElementById('browser-frame').src=document.getElementById('url-input').value" style="padding:8px 16px;border:1px solid rgba(0,0,0,0.2);background:white;border-radius:4px;cursor:pointer;font-size:13px;">⟳</button>
+                <input id="url-input" value="https://en.wikipedia.org/wiki/Windows_11" style="flex:1;padding:8px 16px;border:1px solid rgba(0,0,0,0.2);border-radius:20px;outline:none;font-size:13px;">
                 <button onclick="document.getElementById('browser-frame').src=document.getElementById('url-input').value" style="padding:8px 20px;border:none;background:#0078D7;color:white;border-radius:4px;cursor:pointer;font-weight:500;font-size:13px;">Go</button>
             </div>
-            <iframe id="browser-frame" src="https://www.bing.com" style="flex:1;border:none;background:white;"></iframe>
+            <iframe id="browser-frame" src="https://en.wikipedia.org/wiki/Windows_11" style="flex:1;border:none;background:white;"></iframe>
         </div>
     `;
 }
